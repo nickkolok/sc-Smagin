@@ -1,0 +1,80 @@
+\documentclass[a4paper,14pt]{article} %размер бумаги устанавливаем А4, шрифт 12пунктов
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel} %используем русский и английский языки с переносами
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float,amsthm} %подключаем нужные пакеты расширений
+\usepackage[unicode,colorlinks=true,citecolor=black,linkcolor=black]{hyperref}
+%\usepackage[pdftex,unicode,colorlinks=true,linkcolor=blue]{hyperref}
+\usepackage{indentfirst} % включить отступ у первого абзаца
+\usepackage[dvips]{graphicx} %хотим вставлять рисунки?
+\graphicspath{{illustr/}}%путь к рисункам
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
+\makeatother %Смысл этих трёх строчек мне непонятен, но поверим "Запискам дебианщика"
+
+\usepackage{geometry} % Меняем поля страницы.
+\geometry{left=2cm}% левое поле
+\geometry{right=1cm}% правое поле
+\geometry{top=2cm}% верхнее поле
+\geometry{bottom=2cm}% нижнее поле
+
+\renewcommand{\theenumi}{\arabic{enumi}}% Меняем везде перечисления на цифра.цифра
+\renewcommand{\labelenumi}{\arabic{enumi}}% Меняем везде перечисления на цифра.цифра
+\renewcommand{\theenumii}{.\arabic{enumii}}% Меняем везде перечисления на цифра.цифра
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}% Меняем везде перечисления на цифра.цифра
+\renewcommand{\theenumiii}{.\arabic{enumiii}}% Меняем везде перечисления на цифра.цифра
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}% Меняем везде перечисления на цифра.цифра
+
+
+
+% https://tex.stackexchange.com/questions/69085/two-different-calligraphic-font-styles-in-math-mode
+\usepackage{calrsfs}
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+
+\sloppy
+
+
+\renewcommand\normalsize{\fontsize{14}{25.2pt}\selectfont}
+
+\begin{document}
+% !!!
+% Здесь начинается реальный ТеХ-код
+% Всё, что выше - беллетристика
+
+\subsection{Определение и свойства оператора ортогонального проектирования}
+
+\subsection{Лемма 3.1 об элементе наилучшей аппроксимации в подпространство}
+
+\subsection{Задача определения проекции $P_n\in L_n = \mathcal{L}(e_1,...,e_n)$ (проектирования на конечномерное подпространство)}
+
+\subsection{Численный алгоритм построения приближенного решения по методу Ритца на конечномерном подпространстве гильбертова пространства (система уравнений)}
+
+\subsection{Определение предельно плотной системы подпространств}
+
+\subsection{Теорема 3.1 о минимуме расширенного функционала энергии на подпространстве гильбертова пространства}
+
+\subsection{Определение полной системы элементов и теорема 3.2 о предельно плотной последовательности подпространств}
+
+\subsection{Алгебраическая координатная система для нахождения приближенного решения первой краевой задачи}
+
+\subsection{Тригонометрическая координатная система для нахождения приближенного решения первой краевой задачи}
+Синусы.
+
+\subsection{Тригонометрическая координатная система для нахождения приближенного решения второй и третьей краевой задач}
+Косинусы.
+
+\subsection{Кусочно-линейные координатные функции и лемма 3.2 об аппроксимации (две оценки)}
+
+\subsection{Теорема 3.7 об оценке второй производной обобщённого решения краевой задачи}
+
+\subsection{Теорема 3.8 об оценке погрешности приближенного решения краавой задачи в норме $L_2[a,b]$}
+
+\subsection{Постановка вариационной задачи: форма, условия, искомый объект и теорема 4.1 Лакса--Мильграма}
+
+\subsection{Формулировка задачи нахождения приближенного решения вариационной задачи по методу Галёркина}
+
+\subsection{Теорема 4.3 (Сеа) об оценке погрешности приближенного решения вариационной задачи}
+
+
+\end{document}
